@@ -1,0 +1,43 @@
+<type name="flash.text::TextField" base="flash.display::InteractiveObject" isDynamic="false" isFinal="false" isStatic="false">
+  <metadata name="Event">
+    <arg key="name" value="textInput"/>
+    <arg key="type" value="flash.events.TextEvent"/>
+  </metadata>
+  <extendsClass type="flash.display::InteractiveObject"/>
+  <extendsClass type="flash.display::DisplayObject"/>
+  <extendsClass type="flash.events::EventDispatcher"/>
+  <extendsClass type="Object"/>
+  <implementsInterface type="flash.events::IEventDispatcher"/>
+  <implementsInterface type="flash.display::IBitmapDrawable"/>
+  <variable name="items" type="Array"/>
+  <variable name="index" type="int"/>
+  <variable name="rowHeight" type="Number"/>
+  <method name="getRawText" declaredBy="flash.text::TextField" returnType="String">
+    <metadata name="Inspectable">
+      <arg key="environment" value="none"/>
+    </metadata>
+  </method>
+  <method name="getCharIndexAtPoint" declaredBy="flash.text::TextField" returnType="int">
+    <parameter index="1" type="Number" optional="false"/>
+    <parameter index="2" type="Number" optional="false"/>
+  </method>
+  <method name="appendText" declaredBy="flash.text::TextField" returnType="void">
+    <parameter index="1" type="String" optional="false"/>
+  </method>
+  <method name="insertXMLText" declaredBy="flash.text::TextField" returnType="void">
+    <parameter index="1" type="int" optional="false"/>
+    <parameter index="2" type="int" optional="false"/>
+    <parameter index="3" type="String" optional="false"/>
+    <parameter index="4" type="Boolean" optional="true"/>
+    <metadata name="Inspectable">
+      <arg key="environment" value="none"/>
+    </metadata>
+  </method>
+  <accessor name="autoSize" access="readwrite" type="String" declaredBy="flash.text::TextField"/>
+  <accessor name="selectedText" access="readonly" type="String" declaredBy="flash.text::TextField">
+    <metadata name="Inspectable">
+      <arg key="environment" value="none"/>
+    </metadata>
+  </accessor>
+  <accessor name="defaultTextFormat" access="readwrite" type="flash.text::TextFormat" declaredBy="flash.text::TextField"/>
+</type>

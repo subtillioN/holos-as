@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<autoParseTest testArray_attributeLevel=":apple:orange:1:2" testDict_attributeLevel=",:one:true,two:wrong,three:false"
+               dictClass="boolean">
+    <!-- LANGUAGE = "en" CANADA -->
+    <!-- DEFAULT PROPERTIES - SET GLOBAL PROPERTY INJECTIONS -->
+    <!-- inject the default data into the VO hierarchy -->
+    <VOInjections>
+        <!-- (below) any time AutoParse attempts to parse a TableVO, it will first inject its 'columnWidths' property Array with the numbers [275, 50, 30].
+        If this is set later in the xml, it wil override the injected data. -->
+        <columnWidths>:TableVO:columnWidths:array:,275,50,30:number</columnWidths>
+        <cellCheckColor>:TableCellVO:checkColor:number:0x606060</cellCheckColor>
+        <cellAlign>:TableCellVO:align:string:left</cellAlign>
+        <notesDefault> <!-- In the array injection below, in the string ";MSRP includes ...", the semicolon is the arbitrary delimiter, chosen because there are no semi-colons in the text elements to be parsed in the Array -->
+            <![CDATA[:PageVO:notes:array:;MSRP includes destination charges but excludes tax, title and license fees. Destination charges may vary in Alaska and Hawaii. Vehicles displayed may contain optional equipment at additional costs. Actual dealer price may vary.:string]]>
+        </notesDefault>
+    </VOInjections>
+    <!-- The following is an example of injecting xml data into a property on a ValueObject subclass that is itself a ValueObject.
+    The xml data is parsed into a new instance of the specified ValueObject, 'TableVO', and injected into the 'pricingTable' property
+    of any subsequent PageVOs that the AutoParse.vo() method encounters. -->
+    <VOInject string=":PageVO:pricingTable:ValueObject:xml:com.core.vo.TableVO">
+        <!-- Below are sz.examples of attribute-level xml data corresponding to (will be parsed as) two Array properties on the injected TableVO
+        whose elements are strings (the default, since no 'elementClass' attribute is specified).  The aforementioned array properties are
+        'columnHeaders' and 'columnAlignments' -->
+        <table numColumns="3" columnHeaders=":PRICING:SPORT:TOURING" columnAlignments=":left:center:center"
+               labelBgColor="0x0089d1" labelBgAlpha="1" width="484" headerHeight="14" x="36" y="20">
+            <!-- 'rows' is an array property on TableVO which is specified here to be populated with TableRowVO instances
+            corresponding to (will be populated with) the 'row' nodes.
+            Note also the 'indexBegin' attribute.  This tells the parser to increment a value on the ValueObject called 'index'
+            with every new instance/element in the array.  In this case it's used to alternate the colors of the backgrounds of
+            the table rows. -->
+            <rows elementClass="com.core.vo.TableRowVO" indexBegin="0">
+                <row>
+                    <items elementClass="com.core.vo.TableCellVO">
+                        <item align="left" check="false">
+                            <data>MSRP</data>
+                        </item>
+                        <item align="center" check="false">
+                            <data>$14,730*</data>
+                        </item>
+                        <item align="center" check="false">
+                            <data>$16,185*</data>
+                        </item>
+                    </items>
+                </row>
+                <row>
+                    <items elementClass="com.core.vo.TableCellVO">
+                        <item align="left" check="false">
+                            <data>MSRP</data>
+                        </item>
+                        <item align="center" check="false">
+                            <data>$14,730*</data>
+                        </item>
+                        <item align="center" check="false">
+                            <data>$16,185*</data>
+                        </item>
+                    </items>
+                </row>
+            </rows>
+        </table>
+    </VOInject>
+    <!-- END OF DEFAULT INJECTIONS -->
+    <!-- PAGES -->
+    <pages elementClass="com.core.vo.PageVO">
+        <page id="Overview" label="OVERVIEW" tablesOffsetY="20">
+            <tables elementClass="com.core.vo.TableVO">
+                <table numColumns="2" columnHeaders=":ENGINE:"
+                       columnAlignments=":left:center:center"
+                       labelBgColor="0x0089d1" labelBgAlpha="1" headerHeight="14" x="36" y="10">>
+                    <rows elementClass="com.core.vo.TableRowVO" indexBegin="0">
+                        <row>
+                            <items elementClass="com.core.vo.TableCellVO">
+                                <item align="left" check="false">
+                                    <data><![CDATA[ENGINE TYPE]]></data>
+                                </item>
+                                <item align="center" check="false">
+                                    <data>
+                                        <![CDATA[1.5-liter DOHC 16-valve 4-cylinder with variable<br/>                        valve timing (VVT)]]></data>
+                                </item>
+                            </items>
+                        </row>
+                        <row>
+                            <items elementClass="com.core.vo.TableCellVO">
+                                <item align="left" check="false">
+                                    <data><![CDATA[HORSEPOWER]]></data>
+                                </item>
+                                <item align="center" check="false">
+                                    <data><![CDATA[100 hp @ 6000 rpm]]></data>
+                                </item>
+                            </items>
+                        </row>
+                        <row>
+                            <items elementClass="com.core.vo.TableCellVO">
+                                <item align="left" check="false">
+                                    <data><![CDATA[TORQUE]]></data>
+                                </item>
+                                <item align="center" check="false">
+                                    <data><![CDATA[98 lb-ft @ 4000 rpm]]></data>
+                                </item>
+                            </items>
+                        </row>
+                    </rows>
+                </table>
+                <table numColumns="2" columnHeaders=":FUEL ECONOMY:"
+                       columnAlignments=":left:center:center"
+                       labelBgColor="0x0089d1" labelBgAlpha="1" headerHeight="14" x="36" y="10">
+                    <rows elementClass="com.core.vo.TableRowVO" indexBegin="0">
+                        <row>
+                            <items elementClass="com.core.vo.TableCellVO">
+                                <item align="left" check="false">
+                                    <data><![CDATA[MANUAL TRANSMISSION (CITY/HWY)]]></data>
+                                </item>
+                                <item align="center" check="false">
+                                    <data><![CDATA[28/35**]]></data>
+                                </item>
+                            </items>
+                        </row>
+                        <row>
+                            <items elementClass="com.core.vo.TableCellVO">
+                                <item align="left" check="false">
+                                    <data><![CDATA[AUTOMATIC TRANSMISSION (CITY/HWY)]]></data>
+                                </item>
+                                <item align="center" check="false">
+                                    <data><![CDATA[28/34**]]></data>
+                                </item>
+                            </items>
+                        </row>
+                    </rows>
+                </table>
+            </tables>
+            <notes> <!-- Overriding the default 'notesDefault' array injection, above -->
+                <note>
+                    <![CDATA[* MSRP includes destination charges but excludes tax, title and license fees. Destination charges may vary in Alaska and Hawaii. Vehicles displayed may contain optional equipment at additional costs. Actual dealer price may vary.]]>
+                </note>
+                <note>
+                    <![CDATA[**Mazda target fuel economy EPA results pending. Actual results may vary.]]>
+                </note>
+            </notes>
+
+        </page>
+        <page id="Exterior" label="EXTERIOR" tablesOffsetY="30">
+            <tables elementClass="com.core.vo.TableVO">
+                <table numColumns="3" columnHeaders=":EXTERIOR FEATURES:SPORT:TOURING"
+                       columnAlignments=":left:center:center"
+                       labelBgColor="0x0089d1" labelBgAlpha="1" headerHeight="14" x="36"
+                       y="13">
+                    <rows elementClass="com.core.vo.TableRowVO" indexBegin="0">
+                        <row>
+                            <items elementClass="com.core.vo.TableCellVO">
+                                <item align="left" check="false">
+                                    <data>HALOGEN HEADLIGHTS</data>
+                                </item>
+                                <item align="center" check="true"/>
+                                <item align="center" check="true"/>
+                            </items>
+                        </row>
+                        <row>
+                            <items elementClass="com.core.vo.TableCellVO">
+                                <item align="left" check="false">
+                                    <data>HALOGEN FOG LIGHTS</data>
+                                </item>
+                                <item align="center" check="false"/>
+                                <item align="center" check="true"/>
+                            </items>
+                        </row>
+                        <row>
+                            <items elementClass="com.core.vo.TableCellVO">
+                                <item align="left" check="false">
+                                    <data>VARIABLE-INTERMITTENT WINDSHIELD WIPERS</data>
+                                </item>
+                                <item align="center" check="true"/>
+                                <item align="center" check="true"/>
+                            </items>
+                        </row>
+                    </rows>
+                </table>
+                <table numColumns="3" columnHeaders=":EXTERIOR DIMENSIONS:SPORT:TOURING"
+                       columnAlignments=":left:center:center"
+                       labelBgColor="0x0089d1" labelBgAlpha="1" headerHeight="14" x="36"
+                       y="13"
+                        >
+                    <rows elementClass="com.core.vo.TableRowVO" indexBegin="0">
+                        <row>
+                            <items elementClass="com.core.vo.TableCellVO">
+                                <item align="left" check="false">
+                                    <data>WHEELBASE (IN)</data>
+                                </item>
+                                <item align="center" check="false">
+                                    <data>98.0</data>
+                                </item>
+                                <item align="center" check="false">
+                                    <data>98.0</data>
+                                </item>
+                            </items>
+                        </row>
+                        <row>
+                            <items elementClass="com.core.vo.TableCellVO">
+                                <item align="left" check="false">
+                                    <data>TRACK, FRONT (IN)</data>
+                                </item>
+                                <item align="center" check="false">
+                                    <data>58.1</data>
+                                </item>
+                                <item align="center" check="false">
+                                    <data>58.1</data>
+                                </item>
+                            </items>
+                        </row>
+                        <row>
+                            <items elementClass="com.core.vo.TableCellVO">
+                                <item align="left" check="false">
+                                    <data>TRACK, REAR (IN)</data>
+                                </item>
+                                <item align="center" check="false">
+                                    <data>57.7</data>
+                                </item>
+                                <item align="center" check="false">
+                                    <data>57.7</data>
+                                </item>
+                            </items>
+                        </row>
+                    </rows>
+                </table>
+            </tables>
+        </page>
+    </pages>
+    <testDict_nodeLevelSimple dictClass="boolean">
+        <entry key="one">true</entry>
+        <entry key="two">false</entry>
+        <entry key="three">sjvhkfj</entry>
+        <entry key="four">4.8</entry>
+        <entry key="five">5.6</entry>
+        <entry key="six">6.1</entry>
+    </testDict_nodeLevelSimple>
+    <testDict_nodeLevelVO dictClass="com.core.vo.GalleryThumbnailVO" indexBegin="8">
+        <thumbnail key="one" x="408" y="229" filename="Thumb_01.jpg"/>
+        <thumbnail key="two" x="558" y="343" filename="Thumb_02.jpg"/>
+        <thumbnail key="three" x="650" y="214" filename="Thumb_03.jpg"/>
+        <thumbnail key="four" x="401" y="407" filename="Thumb_04.jpg"/>
+        <thumbnail key="five" x="297" y="347" filename="Thumb_05.jpg"/>
+        <thumbnail key="six" x="793" y="319" filename="Thumb_06.jpg"/>
+    </testDict_nodeLevelVO>
+</autoParseTest>

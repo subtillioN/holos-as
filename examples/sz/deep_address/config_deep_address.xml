@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RESOURCES auto-parsed and accessed via their ID strings from e.g. R.getInt("myInt") -->
+<resources>
+    <string>
+        <entry key="data_key">deep_address</entry>
+    </string>
+    <xml testPath="../xml/" deployPath="xml/">
+        <!-- flags -->
+        <entry key="deep_address" inline="true">
+            <root loopChildren="false">
+                <node id="a1" loopChildren="false">
+                    <data>
+                        <title>A SECTION ONE</title>
+                    </data>
+                    <node id="b1" loopChildren="false">
+                        <data>
+                            <title>B SECTION ONE</title>
+                        </data>
+                        <node id="c1">
+                            <data>
+                                <title>C SECTION ONE</title>
+                            </data>
+                        </node>
+                        <node id="c2">
+                            <data>
+                                <title>C SECTION TWO</title>
+                            </data>
+                        </node>
+                        <node id="c3">
+                            <data>
+                                <title>C SECTION THREE</title>
+                            </data>
+                        </node>
+                    </node>
+                    <node id="b2" loopChildren="false">
+                        <data>
+                            <title>B SECTION TWO</title>
+                        </data>
+                        <node id="c4">
+                            <data>
+                                <title>C SECTION FOUR</title>
+                            </data>
+                        </node>
+                        <node id="c5">
+                            <data>
+                                <title>C SECTION FIVE</title>
+                            </data>
+                        </node>
+                        <node id="c6">
+                            <data>
+                                <title>C SECTION SIX</title>
+                            </data>
+                        </node>
+                    </node>
+                    <node id="b3" loopChildren="false">
+                        <data>
+                            <title>B SECTION THREE</title>
+                        </data>
+                    </node>
+                </node>
+                <node id="a2" loopChildren="false">
+                    <data>
+                        <title>A SECTION TWO</title>
+                    </data>
+                    <node id="b4">
+                        <data>
+                            <title>B SECTION FOUR</title>
+                        </data>
+                    </node>
+                    <node id="b5">
+                        <data>
+                            <title>B SECTION FIVE</title>
+                        </data>
+                    </node>
+                    <node id="b6">
+                        <data>
+                            <title>B SECTION SIX</title>
+                        </data>
+                    </node>
+                </node>
+                <node id="a3" loopChildren="false">
+                    <data>
+                        <title>A SECTION THREE</title>
+                    </data>
+                    <node id="b7" loopChildren="false">
+                        <data>
+                            <title>B SECTION SEVEN</title>
+                        </data>
+                        <node id="c7">
+                            <data>
+                                <title>C SECTION SEVEN</title>
+                            </data>
+                        </node>
+                        <node id="c8">
+                            <data>
+                                <title>C SECTION EIGHT</title>
+                            </data>
+                        </node>
+                        <node id="c9">
+                            <data>
+                                <title>C SECTION NINE</title>
+                            </data>
+                        </node>
+                    </node>
+                    <node id="b8" loopChildren="false">
+                        <data>
+                            <title>B SECTION EIGHT</title>
+                        </data>
+                        <node id="c10">
+                            <data>
+                                <title>C SECTION TEN</title>
+                            </data>
+                        </node>
+                        <node id="c11">
+                            <data>
+                                <title>C SECTION ELEVEN</title>
+                            </data>
+                        </node>
+                        <node id="c12">
+                            <data>
+                                <title>C SECTION TWELVE</title>
+                            </data>
+                        </node>
+                    </node>
+                </node>
+            </root>
+        </entry>
+    </xml>
+    <vector>
+        <!--scene 7-->
+        <!--<entry key="s7_steer_framescript_keyframes"    parseType="int"     >:2:15:35</entry>-->
+    </vector>
+    <bool>
+        <!-- flags -->
+        <!--<entry key="R-loaded">true</entry>-->
+    </bool>
+    <int>
+        <!-- DEFAULT SCENE -->
+        <!--<entry key="default_scene">0</entry>-->
+    </int>
+    <num>
+        <!--<entry key="scene_modal_bkg_alpha">0.43</entry>-->
+    </num>
+    <images>
+        <!--<entry key="road_txt1" loadImmediately="true">../images/road_txt1.jpg</entry>-->
+    </images>
+</resources>

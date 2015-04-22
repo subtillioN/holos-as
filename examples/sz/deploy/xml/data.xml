@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz id="" title="" >
+    <VOInjections>
+        <inject>:ConfigExSubVO:check_txt:string:Check Answer</inject>
+        <inject>:ConfigExSubVO:next_txt:string:Next</inject>
+        <inject>:ConfigExSubVO:previous_txt:string:Previous</inject>
+        <inject>:ConfigExSubVO:replay_txt:string:Replay</inject>
+        <inject>:ConfigExSubVO:type:string:q</inject>
+        <inject>:ConfigExSubVO:contentPopID:string:Question_question</inject>
+    </VOInjections>
+    <questions parseType="sz.examples.config.ConfigExSubVO">
+        <!--Question data-->
+        <question id="" title="Introduction" check_txt="" previous_txt="" replay_txt="" contentPopID="Question_content_intro" type="info">
+            <content><![CDATA[All of the following common driving scenarios occur whether you drive on the right or left side of the road. In each case, study a description of the potential hazard, then click the button alongside what you think is the best response.]]></content>
+        </question>
+        <question id="1" title="Sandwiched" >
+            <content><![CDATA[You are "sandwiched" between two vehicles on both sides of you. You feel hemmed in by adjacent traffic. What do you do?]]></content>
+            <options parseType="sz.examples.config.ConfigExSubOptionVO">
+                <option id="0" title="A:">
+                    <content><![CDATA[Try to attract the attention of either driver next to you.]]></content>
+                    <response_header><![CDATA[No!]]></response_header>
+                    <response><![CDATA[As tempting as this might be, the best solution is to slow down to let the other vehicles pass you.]]></response>
+                </option>
+                <option id="1" title="B:">
+                    <content><![CDATA[Slow down to let the vehicles pass you.]]></content>
+                    <response_header><![CDATA[Yes!]]></response_header>
+                    <response><![CDATA[Or speed up if it makes more sense in the traffic and you will not exceed the speed limit.]]></response>
+                </option>
+                <option id="2" title="C:">
+                    <content><![CDATA[Honk your horn and try to make eye contact with the driver next to you.]]></content>
+                    <response_header><![CDATA[No!]]></response_header>
+                    <response><![CDATA[This will only confuse the driver next to you and may cause him or her to swerve into you when he/she looks at you.]]></response>
+                </option>
+                <option id="3" title="D:">
+                    <content><![CDATA[Speed up to get in front of the vehicles.]]></content>
+                    <response_header><![CDATA[Maybe!]]></response_header>
+                    <response><![CDATA[But only if you can do it without exceeding the speed limit. Another solution would be to slow down if it makes more sense in the traffic.]]></response>
+                </option>
+            </options>
+        </question>
+        <question id="2" title="Wet Road" >
+            <content><![CDATA[You are driving at the speed limit on the freeway, it's raining hard and your vehicle is making violent, jerky movements. You turn the wheel to discover that you have lost traction and are hydroplaning/aquaplaning on the puddles of water on the road. What do you do?]]></content>
+            <options parseType="sz.examples.config.ConfigExSubOptionVO">
+                <option id="0" title="A:">
+                    <content><![CDATA[Turn the wheel hard to the right and hope you will do a full 360 turn by the time you regain traction.]]></content>
+                    <response_header><![CDATA[No!]]></response_header>
+                    <response><![CDATA[This could cause the vehicle to roll over. The best solution is to just take your foot off of the gas pedal and let the vehicle slow down while steering very carefully (no sudden or big movements of the wheel) in the direction you want to go.]]></response>
+                </option>
+                <option id="1" title="B:">
+                    <content><![CDATA[Brake hard and let ABS stop you.]]></content>
+                    <response_header><![CDATA[No!]]></response_header>
+                    <response><![CDATA[ABS (anti-lock braking system) is designed to prevent your wheels from locking up and skidding. The best solution is to just take your foot off the gas pedal and let the vehicle slow down while steering very carefully (no sudden or big movements of the wheel) in the direction you want to go.]]></response>
+                </option>
+                <option id="2" title="C:">
+                    <content><![CDATA[Brake lightly and steer straight.]]></content>
+                    <response_header><![CDATA[Maybe!]]></response_header>
+                    <response><![CDATA[It's better to avoid the brakes as your tires are not in contact with the road. Braking will slow the wheels down, but there is a chance of losing control if you suddenly regain traction and you are braking.]]></response>
+                </option>
+                <option id="3" title="D:">
+                    <content><![CDATA[Ease off of the gas pedal and carefully steer your vehicle in the direction you want it to go.]]></content>
+                    <response_header><![CDATA[Yes!]]></response_header>
+                    <response><![CDATA[Hydroplaning occurs when water on the roadway accumulates in front of your vehicle's tires faster than the weight of your vehicle can push it out of the way. The water pressure can cause your car to rise up and slide on top of a thin layer of water. This most commonly happens at speeds higher than 40 mph (65 kph). Slowing down will help you regain traction. Steering “into the skid” will align the rear of the vehicle with the front. Do not make sudden or big movements with the steering wheel. ]]></response>
+                </option>
+            </options>
+        </question>
+        <question id="3" title="Motorcycle Weaving" >
+            <content><![CDATA[A motorcyclist appears out of nowhere in your driver’s-side mirror when you are stuck in traffic and they are zipping along through any opening they can find on the road. What should you do?]]></content>
+            <options parseType="sz.examples.config.ConfigExSubOptionVO">
+                <option id="0" title="A:">
+                    <content><![CDATA[Maintain your position in traffic, slow down if possible.]]></content>
+                    <response_header><![CDATA[Yes!]]></response_header>
+                    <response><![CDATA[Let him/her pass you. Do not try to force the rider to stay behind you by moving into their way. This can cause a terrible crash.]]></response>
+                </option>
+                <option id="1" title="B:">
+                    <content><![CDATA[Weave back and forth to make the motorcycle stay in the lane with everyone else.]]></content>
+                    <response_header><![CDATA[No!]]></response_header>
+                    <response><![CDATA[You might cause other vehicles around you to swerve to avoid your sudden maneuvers and create a hazardous situation.]]></response>
+                </option>
+                <option id="2" title="C:">
+                    <content><![CDATA[Tap SOS using your brake lights.]]></content>
+                    <response_header><![CDATA[No!]]></response_header>
+                    <response><![CDATA[The best thing to do is just let the motorcycle rider pass.]]></response>
+                </option>
+                <option id="3" title="D:">
+                    <content><![CDATA[Move over in the lane to allow the motorcycle room to pass.]]></content>
+                    <response_header><![CDATA[Maybe!]]></response_header>
+                    <response><![CDATA[Maintaining your position is better unless you can see something the motorcycle rider cannot. If you move close to the vehicle next to you it might cause them to swerve and create an incident.]]></response>
+                </option>
+            </options>
+        </question>
+        <question id="4" title="Blind Spot" >
+            <content><![CDATA[A large semi-truck doesn’t see you in his blind spot and starts moving into your lane. What should you do?]]></content>
+            <options parseType="sz.examples.config.ConfigExSubOptionVO">
+                <option id="0" title="A:">
+                    <content><![CDATA[Speed up so you are no longer in the blind spot; use your horn to let the truck know you are there, and move away from it.]]></content>
+                    <response_header><![CDATA[Maybe!]]></response_header>
+                    <response><![CDATA[If you can't move into a different lane, try to pass the truck. It might be better to slow down to get behind the truck. The best response will depend on the road situation.]]></response>
+                </option>
+                <option id="1" title="B:">
+                    <content><![CDATA[Slow down so that you are no longer in the blind spot.]]></content>
+                    <response_header><![CDATA[Maybe!]]></response_header>
+                    <response><![CDATA[If you can't move into a different lane or pass the truck, then slow down to get behind the truck. The best response will depend on the road situation.]]></response>
+                </option>
+                <option id="2" title="C:">
+                    <content><![CDATA[Move into the next lane.]]></content>
+                    <response_header><![CDATA[Yes!]]></response_header>
+                    <response><![CDATA[Your best option is to use your space around you to escape being hit.]]></response>
+                </option>
+                <option id="3" title="D:">
+                    <content><![CDATA[Use your mobile phone to dial the "Am I Driving Safe?" sticker telephone number so you can report the truck driver.]]></content>
+                    <response_header><![CDATA[No!]]></response_header>
+                    <response><![CDATA[Never use a mobile phone while you are driving.]]></response>
+                </option>
+            </options>
+        </question>
+        <question id="5" title="Running a Red" >
+            <content><![CDATA[Someone is running a red light in the cross traffic of the 4-way intersection in front of you. What should you do?]]></content>
+            <options parseType="sz.examples.config.ConfigExSubOptionVO">
+                <option id="0" title="A:">
+                    <content><![CDATA[Hesitate and look both ways prior to entering an intersection on a newly turned green light.]]></content>
+                    <response_header><![CDATA[Yes!]]></response_header>
+                    <response><![CDATA[Never go as soon as it turns green. Take a second to check the intersection and make sure no one is going to hit you when you enter it.]]></response>
+                </option>
+                <option id="1" title="B:">
+                    <content><![CDATA[Honk your horn to alert others.]]></content>
+                    <response_header><![CDATA[Maybe!]]></response_header>
+                    <response><![CDATA[This might work, but it may not be clear who you are honking. The best defensive technique is to look both ways prior to entering an intersection to make sure the way is clear.]]></response>
+                </option>
+                <option id="2" title="C:">
+                    <content><![CDATA[Start to move forward with the intention of making the driver stop.]]></content>
+                    <response_header><![CDATA[No!]]></response_header>
+                    <response><![CDATA[Let the person clear the intersection and do not enter the intersection until all cross traffic has cleared.]]></response>
+                </option>
+                <option id="3" title="D:">
+                    <content><![CDATA[Take a picture with your mobile phone of the license plate so that you can report them.]]></content>
+                    <response_header><![CDATA[No!]]></response_header>
+                    <response><![CDATA[Never use a phone - for any purpose - while driving.]]></response>
+                </option>
+            </options>
+        </question>
+        <question id="6" title="Risky Overtaking" >
+            <content><![CDATA[A car is overtaking another approaching you from the other direction. It is in your lane coming at you and you aren't sure there is enough room.]]></content>
+            <options parseType="sz.examples.config.ConfigExSubOptionVO">
+                <option id="0" title="A:">
+                    <content><![CDATA[Honk the horn, long and loud.]]></content>
+                    <response_header><![CDATA[No!]]></response_header>
+                    <response><![CDATA[This might worsen an already bad situation caused by a poor decision made by the driver.]]></response>
+                </option>
+                <option id="1" title="B:">
+                    <content><![CDATA[Swerve to the outside and hit the brakes.]]></content>
+                    <response_header><![CDATA[Maybe!]]></response_header>
+                    <response><![CDATA[There is no perfect solution for this situation, and swerving to the outside of your lane might give the car a little more space to escape into. But this sudden maneuver may lead to a worse incident.]]></response>
+                </option>
+                <option id="2" title="C:">
+                    <content><![CDATA[Keep your speed and drive toward the overtaking car until the driver is forced to move back into their lane.]]></content>
+                    <response_header><![CDATA[No!]]></response_header>
+                    <response><![CDATA[Don’t be so sure the driver has seen you – assume they will not take evasive action. As a defensive driver, you should act to avoid a collision as soon as you can by checking mirrors, braking and creating space for the car. ]]></response>
+                </option>
+                <option id="3" title="D:">
+                    <content><![CDATA[Check your mirror and hit the brakes.]]></content>
+                    <response_header><![CDATA[Yes!]]></response_header>
+                    <response><![CDATA[There is no perfect solution for this situation, but this may be the best. Braking might create some space for the approaching car to go into. But check your mirror before you brake to make sure the vehicle behind you won't hit you when you brake hard.]]></response>
+                </option>
+            </options>
+        </question>
+        <question id="7" title="Phone Ringing" >
+            <content><![CDATA[Your dashboard-mounted mobile phone rings. What should you do?]]></content>
+            <options parseType="sz.examples.config.ConfigExSubOptionVO">
+                <option id="0" title="A:">
+                    <content><![CDATA[Press hands-free button to receive call.]]></content>
+                    <response_header><![CDATA[No!]]></response_header>
+                    <response><![CDATA[This is legal in certain countries, but it’s still prohibited by the company if you are driving on company business, on company property or in a company vehicle. The conversation, not the hand-held device, is what can distract you from possible hazards ahead of you on the road.]]></response>
+                </option>
+                <option id="1" title="B:">
+                    <content><![CDATA[Ignore it.]]></content>
+                    <response_header><![CDATA[Correct!]]></response_header>
+                    <response><![CDATA[Don’t even take your eyes off the road. Let the caller leave a message and respond when you are correctly parked.]]></response>
+                </option>
+                <option id="2" title="C:">
+                    <content><![CDATA[Briefly pick it up and say you are driving and cannot take the call.]]></content>
+                    <response_header><![CDATA[No!]]></response_header>
+                    <response><![CDATA[Never use a mobile phone while driving – even if this is legal in your country. Cell phone use is a major distraction – and a major cause of crashes.]]></response>
+                </option>
+                <option id="3" title="D:">
+                    <content><![CDATA[Pick up and text caller to say you are driving.]]></content>
+                    <response_header><![CDATA[No!]]></response_header>
+                    <response><![CDATA[This is even more distracting than talking on a mobile phone. Never use a phone while driving – whether speaking or texting.]]></response>
+                </option>
+            </options>
+        </question>
+        <question id="" title="Congratulations" check_txt="" previous_txt="" next_txt="" replay_txt="Start Over" contentPopID="Question_content_outro" type="info">
+            <content><![CDATA[You have finshed the quiz! We hope you’ve learned something. Retake the quiz as much as you like.]]></content>
+        </question>
+    </questions>
+</quiz>

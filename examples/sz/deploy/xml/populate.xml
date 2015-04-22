@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Populate>
+    <!-- POPULATE FORMATS -->
+    <GlobalColors>
+        <color id="blue"        color="#009DD9"/>
+        <color id="white"       color="#FFFFFF"/>
+        <color id="grey"        color="#666666"/>
+        <color id="orange"      color="#FFD200"/>
+    </GlobalColors>
+    <TextContent>
+        <!-- IntroPanel-->
+        <text id="Question_content_intro"   font="InterReg"  colorID="white"   size="12"  x="0"   y="0"   leading="3" width="450" />
+        <text id="Question_content_outro"   font="InterReg"  colorID="white"   size="12"  x="0"   y="0"   leading="3" width="450" />
+        <!-- Questions -->
+        <text id="NavArrow_label_check"     font="InterReg"  colorID="white"   size="12"  x="20"  y="0"  />
+        <text id="NavArrow_label_next"      font="InterReg"  colorID="white"   size="12"  x="74"  y="0"  />
+        <text id="NavArrow_label_previous"  font="InterReg"  colorID="white"   size="12"  x="113" y="0"   width="30"/>
+        <text id="Replay_label"             font="InterReg"  colorID="white"   size="12"  x="20"  y="0"   width="30"/>
+        <text id="Question_question"        font="InterReg"  colorID="white"   size="12"  x="0"   y="0"   width="330" />
+        <text id="Question_title"           font="InterBol"  colorID="white"   size="24"  x="0"   y="-3"  />
+        <!-- q ids -->
+        <text id="Question_id_1"            font="InterBol"  colorID="blue"    size="18"  x="3"   y="-1"  thickness="200" />
+        <text id="Question_id_2"            font="InterBol"  colorID="blue"    size="18"  x="3"   y="-2"  thickness="200" />
+        <text id="Question_id_3"            font="InterBol"  colorID="blue"    size="18"  x="3"   y="-2"  thickness="200" />
+        <text id="Question_id_4"            font="InterBol"  colorID="blue"    size="18"  x="3"   y="-2"  thickness="200" />
+        <text id="Question_id_5"            font="InterBol"  colorID="blue"    size="18"  x="3"   y="-1"  thickness="200" />
+        <text id="Question_id_6"            font="InterBol"  colorID="blue"    size="18"  x="3"   y="-2"  thickness="200" />
+        <text id="Question_id_7"            font="InterBol"  colorID="blue"    size="18"  x="3"   y="-1"  thickness="200" />
+        <!-- x -->
+        <text id="Question_response_header" font="InterBol"  colorID="orange"  size="18"  x="0"   y="0"  />
+        <text id="Question_response"        font="InterReg"  colorID="white"   size="12"  x="0"   y="0"   width="330" />
+        <text id="OptionListItem_content"   font="InterReg"  colorID="white"   size="12"  x="60"  y="0"   width="280" />
+        <text id="OptionListItem_id"        font="InterBol"  colorID="blue"    size="12"  x="42"  y="0"   thickness="200" />
+
+
+        <!--<text id="test1"  font="InterReg"  colorID="blue" size="15"  x="0"   y="50"  >InterReg</text>-->
+        <!--<text id="test2"  font="InterBol"  colorID="blue" weight="bold" size="15"  x="0"   y="30"  >InterBol</text>-->
+        <!--<text id="Promo_body"       font="Interstate"   colorID="blue"    leading="1"  letterSpacing="0" size="14" x="398" y="80" width="650" align="right" thickness="200" antiAliasTypeAdvanced="true"-->
+                <!--><![CDATA[If there’s one thing you can count on in life, it’s to expect the unexpected. With its in motion styling <br/>and dynamic design, the six-passenger, 2.5L Mazda5 brings a whole new meaning <br/>to form and function. Mazda5 refuses to be categorized. Remarkably nimble and roomy. <br/>With exceptional versatility and safety. Mazda5 offers a revolutionary way for weekday warriors, <br/>maverick multi-taskers and parental pioneers to move their lives.]]>-->
+        <!--</text>-->
+        <!--<text id="lang_link"            font="Interstate"   size="12" colorID="blue"  letterSpacing="0" thickness="200" antiAliasTypeAdvanced="true">FRANÇAIS</text>-->
+    </TextContent>
+</Populate>
+

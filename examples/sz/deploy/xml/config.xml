@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RESOURCES auto-parsed and accessed via their ID strings from e.g. R.getInt("myInt") -->
+<res>
+    <xml testPath="../xml/" deployPath="xml/">
+        <!-- flags -->
+        <entry key="populate">populate.xml</entry>
+        <entry key="data" lazy="true">data.xml</entry>
+    </xml>
+    <vo>
+        <entry key="settings" parseType="sz.examples.config.SettingsVO">
+            <root id="THX-1138" title="A GREAT MOVIE" address=":123:456:789">
+            </root>
+        </entry>
+    </vo>
+    <vector>
+        <!-- STEERING CONTROL KEYFRAME EVENT TRIGGERS -->
+        <!--scene 1-->
+        <entry key="s1_steer_framescript_keyframes" parseType="int">:2:35:65</entry>
+        <entry key="s1_steer_framescript_amounts" parseType="number">:-2:1:-1</entry>
+        <entry key="s1_steer_framescript_speeds" parseType="number">:1.8:1.3:1</entry>
+    </vector>
+    <boolean>
+        <entry key="one">true</entry>
+        <entry key="two">false</entry>
+        <entry key="three">sjvhkfj</entry>
+        <entry key="four">4.8</entry>
+        <entry key="five">5.6</entry>
+        <entry key="six">6.1</entry>
+    </boolean>
+    <int>
+        <entry key="one">1</entry>
+        <entry key="two">2.5</entry>
+        <entry key="three">-3</entry>
+        <entry key="four">-4.8</entry>
+    </int>
+    <number>
+        <entry key="one">2.3</entry>
+        <entry key="two">1</entry>
+    </number>
+    <string>
+        <entry key="one">hi bob</entry>
+        <entry key="two">1</entry>
+        <entry key="three">9877dfjk</entry>
+    </string>
+    <loadGroups priority="0">
+        <entry key="scenes" type="swf" priorityType="sequential" loadImmediately="false">
+            <item id="scene1">scene1.swf</item>
+            <item id="scene2">scene2.swf</item>
+            <item id="scene3">scene3.swf</item>
+            <item id="scene4">scene4.swf</item>
+            <item id="scene5">scene5.swf</item>
+            <item id="scene6">scene6.swf</item>
+            <item id="scene7">scene7.swf</item>
+        </entry>
+    </loadGroups>
+</res>
