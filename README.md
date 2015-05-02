@@ -1,10 +1,10 @@
-#Holos-AS
-Holos-AS is a result of my earlier work in ActionScript, developing a framework for organizing, simplifying, and 
+#Holos-AS3
+Holos-AS3 is a result of my earlier work in ActionScript3, developing a framework for organizing, simplifying, and 
 automating many of the tasks I was facing in the building of various Flash-based applications.  Due to the collapse
 of Flash as a viable web platform, work on this library was halted and my energies shifted to JavaScript related 
 endeavors.
 
-Holos-AS consists of three main parts:
+Holos-AS3 consists of three main parts:
 1: Deep Address: automates and externalizes the routing of the hierarchical navigational (deep-linking) 
 structure and logic of a site.
 2: AutoParse: automatically parses XML into Value Objects (VOs) as a function of introspection on the VO classes
